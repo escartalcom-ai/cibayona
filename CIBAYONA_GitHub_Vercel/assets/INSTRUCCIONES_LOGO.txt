@@ -1,0 +1,4 @@
+Cuando tengas los archivos oficiales, sube aquí:
+- assets/logo.png (logo horizontal/cuadrado según diseño; después se puede incorporar al encabezado)
+- assets/favicon.png (favicon)
+No sustituyas el logotipo oficial por una imagen inventada.
