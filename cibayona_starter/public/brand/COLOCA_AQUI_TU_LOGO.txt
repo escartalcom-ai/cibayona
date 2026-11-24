@@ -1,3 +1,0 @@
-Coloca aquí el logotipo oficial de CIBAYONA cuando lo tengas.
-Nombre recomendado: logo-cibayona.svg o logo-cibayona.png
-No se ha generado un logotipo ficticio. Actualiza el componente de marca en app/page.tsx para utilizar el archivo definitivo.

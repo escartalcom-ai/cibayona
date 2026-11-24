@@ -1,3 +1,0 @@
-Coloca aquí el favicon oficial de CIBAYONA.
-Recomendado: favicon.ico o favicon.png.
-Luego declara el recurso en metadata.icons dentro de app/layout.tsx.
