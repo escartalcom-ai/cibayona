@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#32A9D8">
+  <meta name="description" content="CIBAYONA: soluciones industriales, eléctricas y comerciales. Consulta productos y coordina tu pedido por WhatsApp.">
+  <title>CIBAYONA | Tienda industrial</title>
+  <link rel="icon" href="/assets/favicon.png" type="image/png" sizes="64x64">
+  <link rel="alternate icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <style>
+    :root{--sky:#20a8d8;--sky-dark:#087eae;--sky-pale:#eaf8fd;--orange:#f28a24;--ink:#172b3a;--muted:#667887;--line:#e3ebf0;--surface:#fff;--bg:#f6f9fb;--green:#16885b;--shadow:0 12px 34px rgba(21,54,75,.09)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select,textarea{font:inherit}button{cursor:pointer}.container{width:min(1180px,calc(100% - 36px));margin:auto}.topbar{background:#f0faff;color:#446274;font-size:12px;padding:8px 0}.topbar .container{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}.header{position:sticky;top:0;z-index:20;background:#fff;border-bottom:1px solid var(--line)}.header-main{min-height:78px;display:flex;align-items:center;gap:26px}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);min-width:190px}.brand-mark{width:42px;height:42px;border-radius:12px;background:var(--sky);color:white;display:grid;place-items:center;font-weight:900;font-size:22px;box-shadow:inset 0 -4px 0 rgba(0,0,0,.09);flex:0 0 42px}.brand-logo{width:58px;height:54px;object-fit:contain;display:none;flex:0 0 auto}.brand-logo.is-loaded{display:block}.brand-mark.is-hidden{display:none}.brand strong{display:block;font-size:21px;letter-spacing:1.4px;line-height:1}.brand small{display:block;margin-top:4px;color:var(--muted);font-size:10px;letter-spacing:.8px}.search{flex:1;display:flex;align-items:center;max-width:650px;background:#f6f9fb;border:1px solid var(--line);border-radius:12px;padding:0 13px;gap:9px}.search input{width:100%;border:0;outline:0;background:transparent;padding:13px 0;color:var(--ink)}.search span{font-size:18px;color:var(--muted)}.header-actions{margin-left:auto;display:flex;gap:10px;align-items:center}.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:750;transition:.18s;display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn-primary{background:var(--orange);color:#fff}.btn-primary:hover{background:#df7413;transform:translateY(-1px)}.btn-secondary{background:var(--sky-pale);color:var(--sky-dark)}.btn-ghost{background:#fff;border:1px solid var(--line);color:var(--ink)}.cart-btn{position:relative}.cart-count{position:absolute;top:-7px;right:-7px;background:var(--orange);color:#fff;border-radius:99px;min-width:20px;height:20px;font-size:11px;display:grid;place-items:center;padding:0 5px}.mobile-search{display:none;padding:0 0 12px}.hero{margin:28px auto 20px;background:linear-gradient(115deg,#dff5fc 0%,#f5fbfe 60%,#fff2e4 100%);border-radius:22px;overflow:hidden;position:relative}.hero-inner{padding:52px 54px;max-width:790px}.eyebrow{color:var(--sky-dark);font-size:12px;font-weight:850;letter-spacing:1.5px;text-transform:uppercase}.hero h1{font-size:clamp(32px,5vw,52px);line-height:1.08;letter-spacing:-1.7px;margin:13px 0 14px;max-width:700px}.hero p{color:#516978;line-height:1.65;font-size:16px;max-width:620px;margin:0 0 24px}.hero-actions{display:flex;gap:10px;flex-wrap:wrap}.hero-stamp{position:absolute;right:6%;bottom:26px;border:1px solid rgba(32,168,216,.25);background:rgba(255,255,255,.75);backdrop-filter:blur(6px);border-radius:18px;padding:17px 20px;text-align:center;color:var(--sky-dark);font-weight:800}.hero-stamp b{display:block;font-size:26px;color:var(--orange)}.trust-row{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:18px 0 34px}.trust{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;display:flex;gap:11px;align-items:center}.trust-icon{width:38px;height:38px;border-radius:11px;background:var(--sky-pale);display:grid;place-items:center;font-size:18px}.trust strong{display:block;font-size:13px}.trust small{color:var(--muted);font-size:11px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin:34px 0 16px}.section-head h2{font-size:25px;letter-spacing:-.6px;margin:0}.section-head p{margin:5px 0 0;color:var(--muted);font-size:13px}.catalog-layout{display:grid;grid-template-columns:230px 1fr;gap:20px;align-items:start}.filters{background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px;position:sticky;top:100px}.filters h3{font-size:15px;margin:0 0 14px}.filter-list{display:grid;gap:6px}.filter-option{border:0;text-align:left;background:transparent;color:#536879;padding:9px 10px;border-radius:9px;font-size:13px}.filter-option.active,.filter-option:hover{background:var(--sky-pale);color:var(--sky-dark);font-weight:750}.filter-label{display:block;margin:18px 0 8px;color:var(--muted);font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.7px}.filter-select{width:100%;border:1px solid var(--line);border-radius:9px;padding:9px;background:#fff;color:var(--ink)}.catalog-toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px;gap:10px}.result-count{font-size:13px;color:var(--muted)}.product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.product-card{background:#fff;border:1px solid var(--line);border-radius:15px;overflow:hidden;display:flex;flex-direction:column;transition:.2s;min-width:0}.product-card:hover{transform:translateY(-3px);box-shadow:var(--shadow);border-color:#c5e7f4}.product-image{height:178px;background:#f2f7fa;display:grid;place-items:center;position:relative;overflow:hidden}.product-image img{width:100%;height:100%;object-fit:contain;padding:13px}.image-placeholder{font-size:42px;color:#9bb6c5}.tag{position:absolute;left:11px;top:11px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 8px;font-size:10px;font-weight:800;color:#526c7a}.tag.offer{background:#fff1e4;color:#c7660e;border-color:#ffdbb8}.product-body{padding:14px;display:flex;flex-direction:column;flex:1}.product-brand{font-size:10px;color:var(--sky-dark);font-weight:850;text-transform:uppercase;letter-spacing:.8px}.product-name{font-size:14px;font-weight:800;line-height:1.35;margin:7px 0 6px;min-height:38px}.product-code{font-size:11px;color:var(--muted)}.product-desc{font-size:12px;color:#647786;line-height:1.45;margin:9px 0;min-height:34px}.product-bottom{margin-top:auto}.product-price{display:flex;align-items:baseline;gap:7px;margin:9px 0}.price{font-weight:900;font-size:18px;color:var(--ink)}.old-price{font-size:12px;color:#8a9aa5;text-decoration:line-through}.price-note{font-size:11px;color:var(--muted)}.availability{font-size:11px;color:var(--green);font-weight:750;margin:7px 0}.availability.pending{color:#a36a14}.card-actions{display:flex;gap:7px}.card-actions .btn{padding:9px 10px;font-size:12px;flex:1}.empty{background:#fff;border:1px dashed #cbd9e1;border-radius:15px;padding:36px;text-align:center;color:var(--muted);grid-column:1/-1}.promo-strip{margin:32px 0;background:#fff7ef;border:1px solid #ffe0c1;border-radius:16px;padding:19px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px}.promo-strip strong{font-size:16px}.promo-strip p{margin:5px 0 0;color:#86613f;font-size:12px}.about{display:grid;grid-template-columns:1.1fr .9fr;gap:22px;margin:40px 0}.about-card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:25px}.about-card h2{margin:0 0 10px;font-size:22px}.about-card p{color:var(--muted);line-height:1.65;font-size:13px}.about-points{display:grid;grid-template-columns:1fr 1fr;gap:10px}.about-point{background:var(--sky-pale);border-radius:12px;padding:14px;font-size:12px;font-weight:750;color:#28677f}.footer{background:#142e40;color:#d7e4eb;margin-top:48px;padding:34px 0 20px}.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:24px}.footer h3{color:#fff;margin:0 0 10px;font-size:15px}.footer p,.footer a{font-size:12px;line-height:1.7;color:#c0d1db;text-decoration:none}.footer a:hover{color:#fff}.footer-bottom{border-top:1px solid #315064;margin-top:25px;padding-top:16px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#a9c0ce;font-size:11px}.footer-bottom a{color:#fff;font-weight:800}.notice{margin:16px 0;padding:12px 14px;border-radius:10px;background:#fff7e9;border:1px solid #f6dfb8;color:#875a14;font-size:12px;line-height:1.5}.notice.error{background:#fff0ef;border-color:#f5c7c3;color:#a53f36}.notice.ok{background:#effaf4;border-color:#c9ecd8;color:#206b43}.hidden{display:none!important}.overlay{position:fixed;inset:0;background:rgba(13,35,50,.46);z-index:50;display:flex;justify-content:flex-end}.drawer{width:min(490px,100%);height:100%;background:#fff;box-shadow:-14px 0 40px rgba(0,0,0,.16);display:flex;flex-direction:column}.drawer-head{padding:20px 22px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.drawer-head h2{margin:0;font-size:20px}.icon-btn{border:1px solid var(--line);background:#fff;border-radius:9px;width:36px;height:36px;font-size:20px;color:var(--ink)}.drawer-content{padding:18px 22px;overflow:auto;flex:1}.cart-line{display:grid;grid-template-columns:58px 1fr auto;gap:11px;padding:13px 0;border-bottom:1px solid var(--line)}.cart-thumb{width:58px;height:58px;background:#f0f6f9;border-radius:9px;object-fit:contain;padding:5px}.cart-line strong{font-size:12px;display:block}.cart-line small{font-size:10px;color:var(--muted)}.qty-control{display:flex;align-items:center;gap:7px;margin-top:7px}.qty-control button{width:25px;height:25px;border:1px solid var(--line);background:#fff;border-radius:7px}.qty-control span{font-size:12px;font-weight:800}.cart-line-price{font-size:12px;font-weight:850;white-space:nowrap}.cart-total{border-top:1px solid var(--line);padding-top:15px;margin-top:10px}.total-row{display:flex;justify-content:space-between;font-weight:900;font-size:18px}.cart-total p{font-size:11px;color:var(--muted);line-height:1.5}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.field{display:grid;gap:5px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:800;color:#526878}.field input,.field textarea{border:1px solid var(--line);border-radius:9px;padding:10px;outline:0;width:100%;font-size:13px}.field input:focus,.field textarea:focus{border-color:var(--sky)}.field textarea{min-height:70px;resize:vertical}.drawer-foot{padding:16px 22px;border-top:1px solid var(--line)}.drawer-foot .btn{width:100%}.modal{position:fixed;inset:0;background:rgba(13,35,50,.5);z-index:60;display:grid;place-items:center;padding:18px}.modal-card{background:#fff;border-radius:17px;width:min(760px,100%);max-height:min(90vh,900px);overflow:auto;box-shadow:var(--shadow)}.modal-top{padding:17px 20px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between}.modal-top h2{font-size:17px;margin:0}.detail-layout{display:grid;grid-template-columns:280px 1fr;gap:22px;padding:22px}.detail-image{background:#f2f7fa;border-radius:12px;min-height:230px;display:grid;place-items:center;overflow:hidden}.detail-image img{max-width:100%;max-height:300px;object-fit:contain}.detail-info h3{margin:7px 0;font-size:22px}.detail-info p{font-size:13px;color:var(--muted);line-height:1.6}.pdf-frame{width:100%;height:430px;border:1px solid var(--line);border-radius:10px}.loader{width:19px;height:19px;border:2px solid #d7edf5;border-top-color:var(--sky-dark);border-radius:50%;display:inline-block;animation:spin .7s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}
+    @media(max-width:920px){.catalog-layout{grid-template-columns:190px 1fr}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-stamp{display:none}.header-main{gap:14px}.brand{min-width:160px}.footer-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:650px){.container{width:min(100% - 24px,1180px)}.topbar .container span:last-child{display:none}.header-main{min-height:66px;gap:9px}.brand{min-width:0}.brand-mark{width:37px;height:37px}.brand strong{font-size:18px}.brand small{font-size:8px}.header-main>.search{display:none}.mobile-search{display:block}.header-actions .contact-btn{display:none}.header-actions .btn{padding:9px 11px}.hero{margin-top:14px;border-radius:16px}.hero-inner{padding:32px 23px}.hero h1{font-size:34px}.hero p{font-size:14px}.trust-row{grid-template-columns:1fr;gap:8px;margin-bottom:26px}.trust{padding:11px}.catalog-layout{display:block}.filters{position:static;margin-bottom:14px;padding:13px}.filters h3{margin-bottom:8px}.filter-list{display:flex;overflow:auto;padding-bottom:2px}.filter-option{white-space:nowrap}.filter-label,.filter-select{display:none}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.product-image{height:135px}.product-body{padding:10px}.product-name{font-size:12px;min-height:34px}.product-desc{display:none}.price{font-size:15px}.card-actions{flex-direction:column}.card-actions .btn{padding:8px}.section-head h2{font-size:21px}.promo-strip{align-items:flex-start;flex-direction:column}.about{grid-template-columns:1fr}.about-points{grid-template-columns:1fr 1fr}.footer-grid{grid-template-columns:1fr;gap:10px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.detail-layout{grid-template-columns:1fr}.detail-image{min-height:170px}.pdf-frame{height:350px}}
+
+    /* Ajustes de interfaz solicitados: búsqueda plegable, banner, tarjetas y redes. */
+    .header-search-row{display:none;background:#fff;border-top:1px solid var(--line);padding:10px 0 12px}
+    .header-search-row.is-open{display:block}
+    .header-search-row .search{width:100%;max-width:none;margin:0 auto}
+    .search-toggle{display:grid;place-items:center;width:40px;height:40px;padding:0;flex:0 0 40px}
+    .search-toggle svg{width:19px;height:19px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}
+    .hero-banner{margin:22px auto 20px;border-radius:18px;overflow:hidden;background:#eaf3f7;min-height:120px;max-height:390px}
+    .hero-banner img{display:block;width:100%;height:auto;max-height:390px;object-fit:cover}
+    .hero-banner.hidden{display:none!important}
+    .card-actions{display:flex;flex-direction:row;align-items:stretch;gap:6px}
+    .card-actions .btn{min-width:0;white-space:nowrap}
+    .card-actions .btn-ghost{flex:1.05}
+    .card-actions .btn-primary{flex:1}
+    .card-qty{display:flex;align-items:center;justify-content:space-between;gap:4px;flex:1;min-width:0}
+    .card-qty button{width:29px;height:32px;border:1px solid var(--line);border-radius:8px;background:#f8fbfc;color:var(--ink);font-weight:850;font-size:16px;padding:0;flex:0 0 29px}
+    .card-qty span{min-width:17px;text-align:center;font-size:12px;font-weight:850;color:var(--ink);font-variant-numeric:tabular-nums}
+    .price-promo{color:var(--green)!important;font-weight:900}
+    .detail-prices{display:flex;align-items:baseline;gap:9px;flex-wrap:wrap;margin:12px 0}
+    .detail-prices .old-price{font-size:14px}
+    .detail-prices .price{font-size:21px}
+    .pdf-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap;padding:0 22px 22px}
+    .pdf-frame{width:100%;height:480px;border:1px solid var(--line);border-radius:10px;background:#f7fafc}
+    .social-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:10px}
+    .social-icon-link{display:inline-flex;align-items:center;gap:8px;padding:8px 11px;border:1px solid #315064;border-radius:10px;color:#fff!important;font-weight:750}
+    .social-icon-link svg{width:20px;height:20px;display:block;fill:currentColor}
+    .social-icon-link:hover{background:#23475e}
+    .social-icon-link.is-disabled{opacity:.58;cursor:default}
+    .social-icon-link.is-disabled:hover{background:transparent}
+    .detail-gallery{display:flex;gap:8px;flex-wrap:wrap;padding:0 22px 18px}
+    .detail-gallery img{width:72px;height:72px;object-fit:contain;border:1px solid var(--line);border-radius:9px;background:#f7fafc;padding:4px;cursor:pointer}
+    .product-features{font-size:12px;color:var(--muted);line-height:1.5}
+    .product-features ul{padding-left:18px;margin:6px 0}
+    .field select{border:1px solid var(--line);border-radius:9px;padding:10px;outline:0;width:100%;font-size:13px;background:#fff;color:var(--ink)}
+    .field select:focus{border-color:var(--sky)}
+    @media(max-width:650px){
+      .header-main{gap:7px}
+      .header-actions{gap:7px}
+      .header-actions .btn{padding:8px 9px}
+      .search-toggle{width:36px;height:36px;flex-basis:36px}
+      .hero-banner{margin:12px auto 16px;border-radius:12px;min-height:85px}
+      .hero-banner img{max-height:210px}
+      .card-actions{flex-direction:row;gap:5px}
+      .card-actions .btn{padding:7px 5px;font-size:10px;border-radius:8px;min-height:32px}
+      .card-qty{gap:2px}
+      .card-qty button{width:24px;height:30px;flex-basis:24px;font-size:15px}
+      .card-qty span{font-size:11px;min-width:15px}
+      .product-price{gap:5px;flex-wrap:wrap}
+      .price{font-size:14px}
+      .old-price{font-size:10px}
+      .pdf-frame{height:360px}
+      .pdf-actions{padding:0 14px 16px}
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="container header-main">
+      <a class="brand" href="#inicio" aria-label="CIBAYONA inicio"><img class="brand-logo" id="brandLogo" src="/assets/logo.png" alt="Logotipo CIBAYONA"><span class="brand-mark" id="brandFallback">C</span><span><strong>CIBAYONA</strong><small>SUMINISTROS INDUSTRIALES</small></span></a>
+      <div class="header-actions">
+        <a class="btn btn-ghost contact-btn" href="mailto:ventas@cibayona.com">Contacto</a>
+        <button class="icon-btn search-toggle" id="toggleSearch" type="button" aria-label="Abrir búsqueda" aria-expanded="false" aria-controls="searchPanel">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"></circle><path d="m16 16 5 5"></path></svg>
+        </button>
+        <button class="btn btn-primary cart-btn" id="openCart" type="button">Carrito <span id="cartCount" class="cart-count">0</span></button>
+      </div>
+    </div>
+    <div class="header-search-row" id="searchPanel">
+      <div class="container"><label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Busca por producto, código, marca o categoría..." autocomplete="off"></label></div>
+    </div>
+  </header>
+  <main class="container" id="inicio">
+    <section class="hero-banner hidden" id="heroBanner" aria-label="Banner principal de CIBAYONA">
+      <img id="heroBannerImage" alt="Banner de productos y soluciones CIBAYONA" loading="eager">
+    </section>
+    <div class="trust-row"><div class="trust"><span class="trust-icon">▦</span><span><strong>Catálogo especializado</strong><small>Productos y fichas técnicas</small></span></div><div class="trust"><span class="trust-icon">✓</span><span><strong>Disponibilidad por confirmar</strong><small>Coordinamos con proveedores</small></span></div><div class="trust"><span class="trust-icon">↗</span><span><strong>Envíos coordinados</strong><small>Consulta costo y plazo de entrega</small></span></div></div>
+    <section id="catalogo"><div class="section-head"><div><div class="eyebrow">Encuentra lo que necesitas</div><h2>Catálogo de productos</h2><p>Busca por nombre, código, marca o categoría.</p></div><button class="btn btn-secondary" id="reloadCatalog">Actualizar catálogo ↻</button></div>
+      <div id="apiNotice" class="notice hidden"></div>
+      <div class="catalog-layout"><aside class="filters"><h3>Categorías</h3><div class="filter-list" id="categoryFilters"><button class="filter-option active" data-category="all">Todas</button></div><span class="filter-label">Ordenar por</span><select class="filter-select" id="sortSelect"><option value="relevance">Relevancia</option><option value="name">Nombre A-Z</option><option value="priceAsc">Precio menor</option><option value="priceDesc">Precio mayor</option></select></aside>
+        <div><div class="catalog-toolbar"><span class="result-count" id="resultCount">Cargando catálogo…</span></div><div class="product-grid" id="productGrid"><div class="empty"><span class="loader"></span><p>Estamos cargando los productos.</p></div></div></div>
+      </div>
+    </section>
+    <section class="promo-strip"><div><strong>¿No encuentras el producto que buscas?</strong><p>Envíanos el código, marca o ficha técnica y coordinaremos su disponibilidad.</p></div><a class="btn btn-primary" href="mailto:ventas@cibayona.com?subject=Consulta%20de%20producto">Solicitar producto</a></section>
+    <section class="about"><div class="about-card"><div class="eyebrow">Sobre nosotros</div><h2>Conectamos tus necesidades con soluciones industriales.</h2><p>CIBAYONA facilita la consulta de productos, información técnica y solicitudes comerciales. Trabajamos con disponibilidad de proveedores y coordinamos cada pedido antes de su confirmación.</p><p><strong>Importante:</strong> la disponibilidad, el precio final, el costo de envío y el plazo de entrega se confirman con nuestro equipo comercial.</p></div><div class="about-card"><h2>Compra con información clara</h2><div class="about-points"><div class="about-point">Consulta de códigos y marcas</div><div class="about-point">Fichas técnicas en PDF</div><div class="about-point">Cantidades mínimas visibles</div><div class="about-point">Pedidos por WhatsApp</div></div></div></section>
+  </main>
+  <footer class="footer"><div class="container"><div class="footer-grid">
+    <div><h3>CIBAYONA</h3><p>Corporación Industrial Bayona E.I.R.L.<br>RUC: 20613105345</p></div>
+    <div><h3>Contacto comercial</h3><p><a href="mailto:ventas@cibayona.com">ventas@cibayona.com</a></p><p>Envíos previa coordinación.</p></div>
+    <div><h3>Síguenos en redes sociales</h3><div class="social-links" id="socialLinks">
+      <a class="social-icon-link is-disabled" id="facebookLink" target="_blank" rel="noopener noreferrer" aria-label="Seguir a CIBAYONA en Facebook" aria-disabled="true" title="Completa facebook_url en CONFIGURACION">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 21v-8.2h2.8l.42-3.2H13.5V7.55c0-.93.26-1.56 1.6-1.56h1.7V3.12A22 22 0 0 0 14.32 3c-2.46 0-4.14 1.5-4.14 4.26V9.6H7.4v3.2h2.78V21h3.32z"></path></svg><span>Facebook</span>
+      </a>
+      <a class="social-icon-link is-disabled" id="tiktokLink" target="_blank" rel="noopener noreferrer" aria-label="Seguir a CIBAYONA en TikTok" aria-disabled="true" title="Completa tiktok_url en CONFIGURACION">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19.6 8.1a7.1 7.1 0 0 1-4.2-1.4v7.1a5.5 5.5 0 1 1-4.7-5.45v3.2a2.35 2.35 0 1 0 1.5 2.2V2.5h3.2c.2 2.2 1.7 3.9 4.2 4.2v1.4z"></path></svg><span>TikTok</span>
+      </a>
+    </div></div>
+  </div><div class="footer-bottom"><span>© <span id="year"></span> CIBAYONA. Todos los derechos reservados.</span><span>Desarrollado por <a href="https://comaxion.vercel.app" target="_blank" rel="noopener noreferrer">COMAXION</a></span></div></div></footer>
+
+  <div id="cartOverlay" class="overlay hidden" aria-hidden="true"><aside class="drawer"><div class="drawer-head"><h2>Tu carrito</h2><button class="icon-btn" id="closeCart" aria-label="Cerrar">×</button></div><div class="drawer-content"><div id="cartItems"></div><div class="cart-total"><div class="total-row"><span>Total estimado</span><span id="cartTotal">S/ 0.00</span></div><p>Los precios y la disponibilidad están sujetos a confirmación. El costo y plazo de envío se coordinan por separado.</p></div><h3 style="font-size:15px;margin:22px 0 12px">Datos para coordinar tu compra</h3><form id="orderForm"><div class="form-grid">
+      <div class="field full"><label for="customerName">Nombres y apellidos *</label><input id="customerName" required maxlength="100" autocomplete="name"></div>
+      <div class="field"><label for="customerPhone">WhatsApp *</label><input id="customerPhone" type="tel" required maxlength="25" autocomplete="tel" placeholder="Ej. 999 999 999"></div>
+      <div class="field"><label for="paymentMethod">Método de pago *</label><select id="paymentMethod" required><option value="">Selecciona un método</option><option value="Yape/Plin">Yape/Plin</option><option value="Efectivo">Efectivo</option><option value="Transferencia Bancaria">Transferencia Bancaria</option><option value="POS">POS</option></select></div>
+      <div class="field full"><label for="customerNotes">Nota</label><textarea id="customerNotes" maxlength="700" placeholder="Escribe aquí alguna indicación (opcional)"></textarea></div>
+    </div></form><div id="orderNotice" class="notice hidden"></div></div><div class="drawer-foot"><button class="btn btn-primary" id="submitOrder" type="button">Registrar solicitud y continuar compra</button></div></aside></div>
+
+  <div id="detailModal" class="modal hidden"><div class="modal-card"><div class="modal-top"><h2>Información del producto</h2><button class="icon-btn" id="closeDetail">×</button></div><div id="detailContent"></div></div></div>
+  <script>
+    const state = { products: [], categories: [], cart: loadCart(), category: 'all', query: '', sort: 'relevance' };
+    const $ = id => document.getElementById(id);
+    const money = (value, currency = 'PEN') => value == null || value === ''
+      ? 'Consultar precio'
+      : new Intl.NumberFormat('es-PE', { style: 'currency', currency }).format(Number(value));
+    const safe = value => String(value ?? '');
+
+    function loadCart() {
+      try { return JSON.parse(localStorage.getItem('cibayona_cart') || '{}'); }
+      catch (_) { return {}; }
+    }
+    function saveCart() {
+      localStorage.setItem('cibayona_cart', JSON.stringify(state.cart));
+      renderCartCount();
+    }
+    function renderCartCount() {
+      $('cartCount').textContent = Object.values(state.cart).reduce((n, item) => n + Number(item.quantity || 0), 0);
+    }
+    function showNotice(message, type = '') {
+      const el = $('apiNotice');
+      el.textContent = message;
+      el.className = 'notice ' + type;
+    }
+    function showOrderNotice(message, type = '') {
+      const el = $('orderNotice');
+      el.textContent = message;
+      el.className = 'notice ' + type;
+    }
+    function node(tag, className, text) {
+      const el = document.createElement(tag);
+      if (className) el.className = className;
+      if (text !== undefined) el.textContent = text;
+      return el;
+    }
+    function formatPrice(p, className = 'product-price') {
+      const wrap = node('div', className);
+      if (p.promotionalPrice != null && p.price != null) {
+        wrap.append(node('span', 'old-price', money(p.price, p.currency)));
+        wrap.append(node('span', 'price price-promo', money(p.promotionalPrice, p.currency)));
+      } else if (p.promotionalPrice != null) {
+        wrap.append(node('span', 'price price-promo', money(p.promotionalPrice, p.currency)));
+      } else {
+        wrap.append(node('span', 'price', money(p.price, p.currency)));
+      }
+      return wrap;
+    }
+    function applySettings(settings = {}) {
+      const banner = $('heroBanner');
+      const bannerImage = $('heroBannerImage');
+      if (settings.bannerUrl) {
+        bannerImage.onerror = () => banner.classList.add('hidden');
+        bannerImage.onload = () => banner.classList.remove('hidden');
+        bannerImage.src = settings.bannerUrl;
+      } else {
+        banner.classList.add('hidden');
+        bannerImage.removeAttribute('src');
+      }
+      setSocialLink('facebookLink', settings.facebookUrl);
+      setSocialLink('tiktokLink', settings.tiktokUrl);
+    }
+    function setSocialLink(id, url) {
+      const link = $(id);
+      if (!link) return;
+      if (url && /^https?:\/\//i.test(String(url))) {
+        link.href = String(url);
+        link.classList.remove('is-disabled');
+        link.setAttribute('aria-disabled', 'false');
+      } else {
+        link.removeAttribute('href');
+        link.classList.add('is-disabled');
+        link.setAttribute('aria-disabled', 'true');
+      }
+    }
+    async function loadCatalog() {
+      $('productGrid').innerHTML = '<div class="empty"><span class="loader"></span><p>Actualizando catálogo…</p></div>';
+      try {
+        const response = await fetch('/api/catalog', { headers: { 'Accept': 'application/json' }, cache: 'no-store' });
+        const payload = await response.json();
+        if (!response.ok) throw new Error(payload.error || 'No se pudo consultar el catálogo.');
+        state.products = payload.products || [];
+        state.categories = payload.categories || [];
+        applySettings(payload.settings || {});
+        renderCategories();
+        renderProducts();
+        $('apiNotice').classList.add('hidden');
+        renderCart();
+      } catch (error) {
+        $('productGrid').innerHTML = '<div class="empty"><strong>No pudimos cargar el catálogo.</strong><p>Revisa la configuración de Google Apps Script y las variables de Vercel. Después actualiza esta página.</p></div>';
+        showNotice('Conexión pendiente: ' + error.message, 'error');
+        $('resultCount').textContent = 'Catálogo no disponible';
+      }
+    }
+    function renderCategories() {
+      const wrap = $('categoryFilters');
+      wrap.replaceChildren();
+      const all = node('button', 'filter-option ' + (state.category === 'all' ? 'active' : ''), 'Todas');
+      all.dataset.category = 'all';
+      wrap.append(all);
+      state.categories.forEach(category => {
+        const button = node('button', 'filter-option ' + (state.category === category.id ? 'active' : ''), category.name);
+        button.dataset.category = category.id;
+        wrap.append(button);
+      });
+    }
+    function filteredProducts() {
+      let list = state.products.filter(product => {
+        const query = state.query.toLowerCase();
+        const matchesQuery = !query || [product.name, product.sku, product.manufacturerCode, product.brand,
+          product.categoryName, product.model, product.shortDescription, product.description]
+          .some(value => safe(value).toLowerCase().includes(query));
+        return matchesQuery && (state.category === 'all' || product.categoryId === state.category);
+      });
+      if (state.sort === 'name') list.sort((a, b) => safe(a.name).localeCompare(safe(b.name), 'es'));
+      if (state.sort === 'priceAsc') list.sort((a, b) => (a.promotionalPrice ?? a.price ?? Infinity) - (b.promotionalPrice ?? b.price ?? Infinity));
+      if (state.sort === 'priceDesc') list.sort((a, b) => (b.promotionalPrice ?? b.price ?? -Infinity) - (a.promotionalPrice ?? a.price ?? -Infinity));
+      return list;
+    }
+    function availabilityLabel(value) {
+      return ({ DISPONIBLE: 'Disponible', DISPONIBLE_PROVEEDOR: 'Disponible con proveedor', POR_CONFIRMAR: 'Disponibilidad por confirmar',
+        BAJO_PEDIDO: 'Bajo pedido', AGOTADO: 'Agotado', DESCONTINUADO: 'Descontinuado' })[value] || safe(value).replaceAll('_', ' ').toLowerCase();
+    }
+    function createCardQuantity(product) {
+      const control = node('div', 'card-qty');
+      const minus = node('button', '', '−');
+      minus.type = 'button';
+      minus.setAttribute('aria-label', 'Disminuir cantidad de ' + product.name);
+      minus.addEventListener('click', () => updateQty(product.id, -1));
+      const quantity = node('span', '', String(state.cart[product.id].quantity));
+      const plus = node('button', '', '+');
+      plus.type = 'button';
+      plus.setAttribute('aria-label', 'Aumentar cantidad de ' + product.name);
+      plus.addEventListener('click', () => updateQty(product.id, 1));
+      control.append(minus, quantity, plus);
+      return control;
+    }
+    function renderProducts() {
+      const grid = $('productGrid');
+      grid.replaceChildren();
+      const list = filteredProducts();
+      $('resultCount').textContent = list.length + ' producto(s)';
+      if (!list.length) {
+        grid.append(node('div', 'empty', 'No encontramos productos con esos criterios. Prueba otra búsqueda o categoría.'));
+        return;
+      }
+      list.forEach(product => {
+        const card = node('article', 'product-card');
+        const image = node('div', 'product-image');
+        image.append(node('span', 'tag ' + (product.promotionalPrice != null ? 'offer' : ''), product.promotionalPrice != null ? 'OFERTA' : (product.categoryName || 'Producto')));
+        if (product.imageUrl) {
+          const img = node('img');
+          img.src = product.imageUrl;
+          img.alt = product.name;
+          img.loading = 'lazy';
+          img.onerror = () => { img.remove(); image.append(node('span', 'image-placeholder', '▦')); };
+          image.append(img);
+        } else image.append(node('span', 'image-placeholder', '▦'));
+
+        const body = node('div', 'product-body');
+        body.append(node('div', 'product-brand', product.brand || 'CIBAYONA'));
+        body.append(node('div', 'product-name', product.name));
+        body.append(node('div', 'product-code', 'Código: ' + (product.sku || product.manufacturerCode || 'Por asignar')));
+        body.append(node('p', 'product-desc', product.shortDescription || product.description || 'Consulta la información y disponibilidad de este producto.'));
+        const bottom = node('div', 'product-bottom');
+        bottom.append(formatPrice(product));
+        const availability = product.availability || 'POR_CONFIRMAR';
+        bottom.append(node('div', 'availability ' + (['AGOTADO', 'DESCONTINUADO', 'POR_CONFIRMAR'].includes(availability) ? 'pending' : ''),
+          availabilityLabel(availability) + ' · Mínimo ' + (product.minQuantity || 1) + ' ' + (product.unit || 'unidad')));
+        const actions = node('div', 'card-actions');
+        const detail = node('button', 'btn btn-ghost', 'Ver Ficha');
+        detail.type = 'button';
+        detail.addEventListener('click', () => openDetail(product));
+        actions.append(detail);
+        if (state.cart[product.id]) {
+          actions.append(createCardQuantity(product));
+        } else {
+          const add = node('button', 'btn btn-primary', 'Agregar');
+          add.type = 'button';
+          add.addEventListener('click', () => addToCart(product));
+          actions.append(add);
+        }
+        bottom.append(actions);
+        body.append(bottom);
+        card.append(image, body);
+        grid.append(card);
+      });
+    }
+    function addToCart(product) {
+      if (['AGOTADO', 'DESCONTINUADO'].includes(product.availability)) {
+        alert('Este producto no está disponible para solicitar.');
+        return;
+      }
+      const minimum = Math.max(1, Number(product.minQuantity || 1));
+      if (!state.cart[product.id]) state.cart[product.id] = { productId: product.id, quantity: minimum };
+      else state.cart[product.id].quantity += minimum;
+      saveCart();
+      renderCart();
+      renderProducts();
+    }
+    function updateQty(id, delta) {
+      const item = state.cart[id];
+      if (!item) return;
+      const product = state.products.find(entry => entry.id === id);
+      const minimum = Math.max(1, Number(product?.minQuantity || 1));
+      item.quantity += delta * minimum;
+      if (item.quantity < minimum) delete state.cart[id];
+      saveCart();
+      renderCart();
+      renderProducts();
+    }
+    function renderCart() {
+      const wrap = $('cartItems');
+      wrap.replaceChildren();
+      let total = 0;
+      const items = Object.values(state.cart);
+      if (!items.length) wrap.append(node('div', 'empty', 'Tu carrito está vacío. Agrega productos para comenzar.'));
+      items.forEach(item => {
+        const product = state.products.find(entry => entry.id === item.productId);
+        if (!product) return;
+        const row = node('div', 'cart-line');
+        if (product.imageUrl) {
+          const img = node('img', 'cart-thumb');
+          img.src = product.imageUrl;
+          img.alt = product.name;
+          row.append(img);
+        } else row.append(node('div', 'cart-thumb', '▦'));
+        const info = node('div', '');
+        info.append(node('strong', '', product.name), node('small', '', (product.sku || '') + ' · ' + (product.unit || 'unidad')));
+        const qty = node('div', 'qty-control');
+        const minus = node('button', '', '−');
+        minus.type = 'button';
+        minus.addEventListener('click', () => updateQty(product.id, -1));
+        const amount = node('span', '', String(item.quantity));
+        const plus = node('button', '', '+');
+        plus.type = 'button';
+        plus.addEventListener('click', () => updateQty(product.id, 1));
+        qty.append(minus, amount, plus);
+        info.append(qty);
+        row.append(info);
+        const price = product.promotionalPrice ?? product.price;
+        const lineValue = price == null ? 'Por confirmar' : money(price * item.quantity, product.currency);
+        row.append(node('div', 'cart-line-price', lineValue));
+        if (price != null) total += price * item.quantity;
+        wrap.append(row);
+      });
+      $('cartTotal').textContent = money(total);
+      renderCartCount();
+    }
+    function openDetail(product) {
+      const wrap = $('detailContent');
+      wrap.replaceChildren();
+      const layout = node('div', 'detail-layout');
+      const imageWrap = node('div', 'detail-image');
+      let mainProductImage = null;
+      if (product.imageUrl) {
+        mainProductImage = node('img');
+        mainProductImage.src = product.imageUrl;
+        mainProductImage.alt = product.name;
+        imageWrap.append(mainProductImage);
+      } else imageWrap.append(node('span', 'image-placeholder', '▦'));
+      const info = node('div', 'detail-info');
+      info.append(node('div', 'product-brand', product.brand || 'CIBAYONA'));
+      info.append(node('h3', '', product.name));
+      info.append(node('div', 'product-code', 'Código: ' + (product.sku || 'N/D') + ' · Modelo: ' + (product.model || 'N/D')));
+      info.append(node('p', '', product.description || product.shortDescription || 'Sin descripción adicional.'));
+      info.append(formatPrice(product, 'detail-prices'));
+      info.append(node('p', '', 'Categoría: ' + (product.categoryName || 'No especificada') + (product.subcategory ? ' · Subcategoría: ' + product.subcategory : '')));
+      info.append(node('p', '', 'Unidad de venta: ' + (product.unit || 'unidad') + ' · Cantidad mínima: ' + (product.minQuantity || 1)));
+      info.append(node('p', '', 'Disponibilidad: ' + availabilityLabel(product.availability || 'POR_CONFIRMAR')));
+      if (product.supplierName) info.append(node('p', '', 'Proveedor: ' + product.supplierName));
+      if (product.stockReported != null) info.append(node('p', '', 'Stock informado: ' + product.stockReported));
+      if (product.lastVerified) info.append(node('p', '', 'Última verificación: ' + new Date(product.lastVerified).toLocaleDateString('es-PE')));
+      if (product.leadTime) info.append(node('p', '', 'Tiempo de abastecimiento: ' + product.leadTime));
+      if (product.technicalSource) info.append(node('p', '', 'Fuente técnica: ' + product.technicalSource));
+      if (product.features) {
+        const features = node('div', 'product-features');
+        features.append(node('strong', '', 'Características'));
+        if (Array.isArray(product.features)) {
+          const list = node('ul', '');
+          product.features.forEach(value => list.append(node('li', '', typeof value === 'string' ? value : JSON.stringify(value))));
+          features.append(list);
+        } else if (typeof product.features === 'object') {
+          const list = node('ul', '');
+          Object.entries(product.features).forEach(([key, value]) => list.append(node('li', '', key + ': ' + (typeof value === 'string' ? value : JSON.stringify(value)))));
+          features.append(list);
+        } else features.append(node('p', '', String(product.features)));
+        info.append(features);
+      }
+      const add = node('button', 'btn btn-primary', 'Agregar al carrito');
+      add.type = 'button';
+      add.addEventListener('click', () => { addToCart(product); $('detailModal').classList.add('hidden'); });
+      info.append(add);
+      layout.append(imageWrap, info);
+      wrap.append(layout);
+      if (Array.isArray(product.gallery) && product.gallery.length) {
+        const gallery = node('div', 'detail-gallery');
+        product.gallery.forEach((url, index) => {
+          const thumb = node('img');
+          thumb.src = url;
+          thumb.alt = product.name + ' - imagen ' + (index + 1);
+          thumb.loading = 'lazy';
+          thumb.addEventListener('click', () => { if (mainProductImage) mainProductImage.src = url; });
+          gallery.append(thumb);
+        });
+        wrap.append(gallery);
+      }
+
+      if (product.datasheetUrl) {
+        const holder = node('div', '');
+        holder.style.padding = '0 22px 14px';
+        holder.append(node('h3', '', 'Ficha técnica'));
+        const frame = node('iframe', 'pdf-frame');
+        frame.src = product.datasheetUrl;
+        frame.title = 'Ficha técnica de ' + product.name;
+        frame.loading = 'lazy';
+        frame.setAttribute('allow', 'autoplay');
+        holder.append(frame);
+        wrap.append(holder);
+        const actions = node('div', 'pdf-actions');
+        const view = node('a', 'btn btn-secondary', 'Abrir ficha en Google Drive');
+        view.href = product.datasheetUrl;
+        view.target = '_blank';
+        view.rel = 'noopener noreferrer';
+        actions.append(view);
+        if (product.datasheetDownloadUrl) {
+          const download = node('a', 'btn btn-primary', 'Descargar PDF');
+          download.href = product.datasheetDownloadUrl;
+          download.target = '_blank';
+          download.rel = 'noopener noreferrer';
+          actions.append(download);
+        }
+        wrap.append(actions);
+      } else {
+        wrap.append(node('p', 'detail-no-pdf', 'Este producto todavía no tiene una ficha técnica vinculada.'));
+      }
+      $('detailModal').classList.remove('hidden');
+    }
+    function openCart() {
+      renderCart();
+      $('cartOverlay').classList.remove('hidden');
+    }
+    async function submitOrder() {
+      const items = Object.values(state.cart);
+      if (!items.length) {
+        showOrderNotice('Agrega al menos un producto al carrito.', 'error');
+        return;
+      }
+      const customer = {
+        name: $('customerName').value.trim(),
+        phone: $('customerPhone').value.trim(),
+        paymentMethod: $('paymentMethod').value,
+        notes: $('customerNotes').value.trim()
+      };
+      if (!customer.name || !customer.phone || !customer.paymentMethod) {
+        showOrderNotice('Completa nombres y apellidos, WhatsApp y método de pago.', 'error');
+        return;
+      }
+      const button = $('submitOrder');
+      button.disabled = true;
+      button.innerHTML = '<span class="loader"></span> Registrando solicitud…';
+      try {
+        const response = await fetch('/api/order', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ customer, items: items.map(item => ({ productId: item.productId, quantity: item.quantity })) })
+        });
+        const result = await response.json();
+        if (!response.ok) throw new Error(result.error || 'No se pudo registrar el pedido.');
+        showOrderNotice('Solicitud ' + result.orderId + ' registrada. Abriendo WhatsApp…', 'ok');
+        state.cart = {};
+        saveCart();
+        renderCart();
+        renderProducts();
+        setTimeout(() => { window.location.href = result.whatsappUrl; }, 650);
+      } catch (error) {
+        showOrderNotice(error.message, 'error');
+      } finally {
+        button.disabled = false;
+        button.textContent = 'Registrar solicitud y continuar compra';
+      }
+    }
+
+    $('openCart').addEventListener('click', openCart);
+    $('closeCart').addEventListener('click', () => $('cartOverlay').classList.add('hidden'));
+    $('cartOverlay').addEventListener('click', event => { if (event.target === $('cartOverlay')) $('cartOverlay').classList.add('hidden'); });
+    $('closeDetail').addEventListener('click', () => $('detailModal').classList.add('hidden'));
+    $('categoryFilters').addEventListener('click', event => {
+      const button = event.target.closest('[data-category]');
+      if (!button) return;
+      state.category = button.dataset.category;
+      renderCategories();
+      renderProducts();
+    });
+    $('sortSelect').addEventListener('change', event => { state.sort = event.target.value; renderProducts(); });
+    $('searchInput').addEventListener('input', event => { state.query = event.target.value; renderProducts(); });
+    $('toggleSearch').addEventListener('click', () => {
+      const panel = $('searchPanel');
+      const isOpen = panel.classList.toggle('is-open');
+      $('toggleSearch').setAttribute('aria-expanded', String(isOpen));
+      $('toggleSearch').setAttribute('aria-label', isOpen ? 'Cerrar búsqueda' : 'Abrir búsqueda');
+      if (isOpen) $('searchInput').focus();
+      else { $('searchInput').value = ''; state.query = ''; renderProducts(); }
+    });
+    $('reloadCatalog').addEventListener('click', loadCatalog);
+    $('submitOrder').addEventListener('click', submitOrder);
+    $('detailModal').addEventListener('click', event => { if (event.target === $('detailModal')) $('detailModal').classList.add('hidden'); });
+    const brandLogo = $('brandLogo');
+    const brandFallback = $('brandFallback');
+    if (brandLogo) {
+      brandLogo.addEventListener('load', () => { brandLogo.classList.add('is-loaded'); brandFallback?.classList.add('is-hidden'); });
+      brandLogo.addEventListener('error', () => { brandLogo.classList.remove('is-loaded'); brandFallback?.classList.remove('is-hidden'); });
+    }
+    $('year').textContent = new Date().getFullYear();
+    renderCartCount();
+    loadCatalog();
+  </script>
+</body>
+</html>
